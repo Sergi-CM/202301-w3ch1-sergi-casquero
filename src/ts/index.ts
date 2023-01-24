@@ -46,8 +46,4 @@ export const daenerys: Fighter = new Fighter(daeneryseData, "Dragons", 10);
 export const tyrion: Advisor = new Advisor(tyrionData, daenerys);
 export const bronn: Squire = new Squire(bronnData, 0, jaime);
 
-console.log(joffrey, jaime, daenerys, tyrion, bronn);
-
 const prueba = new CardComponent();
-
-console.log(prueba);
