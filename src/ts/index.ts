@@ -3,36 +3,37 @@ import { Fighter } from "./characters/Fighter/Fighter";
 import { King } from "./characters/King/King";
 import { Squire } from "./characters/Squire/Squire";
 import type { CharacterDataStructure } from "./characters/types/types";
+import CardComponent from "./ui/CardComponent";
 
-const joffreyData: CharacterDataStructure = {
+export const joffreyData: CharacterDataStructure = {
   name: "Joffrey",
   family: "Baratheon",
   age: 16,
-  imageSource: "../img/joffrey.jpg",
+  imageSource: "assets/joffrey.jpg",
 };
 
-const jaimeData: CharacterDataStructure = {
+export const jaimeData: CharacterDataStructure = {
   name: "Jaime",
   family: "Lannister",
   age: 45,
   imageSource: "../img/jaime.jpg",
 };
 
-const daeneryseData: CharacterDataStructure = {
+export const daeneryseData: CharacterDataStructure = {
   name: "Daenerys",
   family: "Targaryen",
   age: 30,
   imageSource: "../img/daenerys.jpg",
 };
 
-const tyrionData: CharacterDataStructure = {
+export const tyrionData: CharacterDataStructure = {
   name: "Tyrion",
   family: "Lannister",
   age: 40,
   imageSource: "../img/tyrion.jpg",
 };
 
-const bronnData: CharacterDataStructure = {
+export const bronnData: CharacterDataStructure = {
   name: "Bronn",
   family: "Blackwater",
   age: 54,
@@ -45,4 +46,8 @@ export const daenerys: Fighter = new Fighter(daeneryseData, "Dragons", 10);
 export const tyrion: Advisor = new Advisor(tyrionData, daenerys);
 export const bronn: Squire = new Squire(bronnData, 0, jaime);
 
-export const characters = [jaime, joffrey, daenerys, tyrion, bronn];
+console.log(joffrey, jaime, daenerys, tyrion, bronn);
+
+const prueba = new CardComponent();
+
+console.log(prueba);
