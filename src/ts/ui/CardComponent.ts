@@ -25,7 +25,6 @@ class CardComponent extends Character {
   renderImage() {
     this.image = document.createElement("img");
     this.image.src = this.characterData.imageSource;
-    console.log(this.characterData);
     this.image.className = "character__picture card-img-top";
     this.element.appendChild(this.image);
   }
